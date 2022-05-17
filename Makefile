@@ -2,7 +2,7 @@ CC=gcc
 
 #ARCH=-mpentiumpro -march=pentiumpro
 
-CFLAGS=-Wall -O2 $(DEFINES) $(ARCH)
+CFLAGS=-Wall -O2 -Wno-unused-result  $(DEFINES) $(ARCH)
 OFILES=mtf.o mtfread.o mtfutil.o
 
 .SUFFIXES: .c .o
